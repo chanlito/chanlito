@@ -66,7 +66,7 @@ I don’t marry a framework — I just use what fits the job 😄
 
 ## 🧭 Background
 
-🏢 I used to work at **Blue**, a US-registered startup  
+🏢 I used to work at **[Blue](https://blue.cc/)**, a US-registered startup  
 🧑‍🚀 I was one of the early / core engineers  
 🛠️ Helped **build the product from scratch**  
 🚢 Took it from idea ➜ real, shipped SaaS platform  
