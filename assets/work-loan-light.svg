@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="242" viewBox="0 0 840 242" role="img" aria-labelledby="title">
+<title id="title">Loan origination platform</title>
+<rect x="0.5" y="0.5" width="839" height="241" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="24" y="48" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#1f2328">Loan origination platform</text>
+<text x="816" y="48" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#59636e" text-anchor="end">2026 – now</text>
+<text x="24" y="76" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#59636e">Technical lead, Sean Oliver Consulting. Field capture to approval to disbursement.</text>
+<circle cx="29" cy="102" r="2.5" fill="#59636e"/>
+<text x="42" y="107" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">Offline-first Android tablet app: encrypted drafts, background sync, on-device ID OCR, Khmer and English.</text>
+<circle cx="29" cy="129" r="2.5" fill="#59636e"/>
+<text x="42" y="134" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">Approver portal with review queues, delegation and analytics dashboards.</text>
+<circle cx="29" cy="156" r="2.5" fill="#59636e"/>
+<text x="42" y="161" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">NestJS and Oracle backend with Entra ID sign-in, audit logging and a loan calculation engine.</text>
+<rect x="24.5" y="192.5" width="157" height="25" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="33" y="209" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#1f2328">React Native · Expo</text>
+<rect x="188.5" y="192.5" width="135" height="25" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="197" y="209" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#1f2328">React · TanStack</text>
+<rect x="330.5" y="192.5" width="135" height="25" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="339" y="209" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#1f2328">NestJS · TypeORM</text>
+<rect x="472.5" y="192.5" width="61" height="25" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="481" y="209" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#1f2328">Oracle</text>
+<rect x="540.5" y="192.5" width="127" height="25" rx="6" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1"/>
+<text x="549" y="209" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#1f2328">Entra ID · OIDC</text>
+</svg>

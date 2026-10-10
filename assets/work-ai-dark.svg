@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="236" viewBox="0 0 840 236" role="img" aria-labelledby="title">
+<title id="title">AI-powered products</title>
+<rect x="0.5" y="0.5" width="839" height="235" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+<text x="24" y="48" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#e6edf3">AI-powered products</text>
+<text x="816" y="48" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#9da7b3" text-anchor="end">2026</text>
+<text x="24" y="76" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#9da7b3">Independent consulting for clients in Cambodia.</text>
+<circle cx="29" cy="102" r="2.5" fill="#9da7b3"/>
+<text x="42" y="107" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#e6edf3">Fitness platform with AI workout generation on Elixir, Phoenix LiveView and Gemini.</text>
+<circle cx="29" cy="129" r="2.5" fill="#9da7b3"/>
+<text x="42" y="134" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#e6edf3">Medicine assistant that reads prescription images and PDFs, then finds one pharmacy that can fill the whole</text>
+<text x="42" y="155" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#e6edf3">list.</text>
+<rect x="24.5" y="186.5" width="142" height="25" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<text x="33" y="203" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#e6edf3">Elixir · LiveView</text>
+<rect x="173.5" y="186.5" width="61" height="25" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<text x="182" y="203" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#e6edf3">Gemini</text>
+<rect x="241.5" y="186.5" width="113" height="25" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<text x="250" y="203" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#e6edf3">Vercel AI SDK</text>
+<rect x="361.5" y="186.5" width="164" height="25" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<text x="370" y="203" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#e6edf3">TanStack AI · OpenAI</text>
+</svg>
