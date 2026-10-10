@@ -1,103 +1,80 @@
 <div align="center">
 
-# Hey, I'm Chanlito 👋
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&random=false&width=460&lines=Full-Stack+Engineer;SaaS+Builder;Elixir+%26+JavaScript+Enthusiast;Turning+ideas+into+shipped+products)](https://git.io/typing-svg)
-
-*I take ideas, design how they should work, and turn them into real things people can use.*<br/>
-*I don't marry a framework — I just use what fits the job.*
-
-<br/>
-
-[![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)](https://gitlab.com/chanlitogoingbloo)
-&nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/chanlito)
+<samp>CHANLITO(1)&emsp;&emsp;User Commands&emsp;&emsp;CHANLITO(1)</samp>
 
 </div>
 
-<br/>
+### <samp>NAME</samp>
 
-## ⚡ About
+**chanlito** – technical lead and full-stack engineer
 
-- 🏢 &nbsp;Former core engineer at **[Blue](https://blue.cc/)** — built the product from scratch, idea → shipped SaaS
-- 🚀 &nbsp;Full-stack across the **Elixir/Phoenix** and **JavaScript/Node** ecosystems
-- 🧡 &nbsp;Most active work lives on **[GitLab](https://gitlab.com/chanlitogoingbloo)**
-- ☕ &nbsp;Fueled by coffee and bad ideas that become good products
+### <samp>SYNOPSIS</samp>
 
-<br/>
+<samp><b>chanlito</b> [<i>OPTION</i>]... <i>IDEA</i></samp>
 
-## 🛠 Tech Stack
+### <samp>DESCRIPTION</samp>
 
-<div align="center">
+**chanlito** turns business processes into production software and grows the teams that run it. Ten years in, including almost eight as the founding engineer at [Blue](https://blue.cc).
 
-[![My Skills](https://skillicons.dev/icons?i=ts,js,elixir,html,css,vue,nuxtjs,react,nextjs,nodejs,express,nestjs,graphql,postgres,mysql,mongodb,firebase,supabase,docker,aws,gcp,vercel&perline=11)](https://skillicons.dev)
+Currently Technical Lead at Sean Oliver Consulting, leading engineering on a loan origination platform for a Cambodian financial institution.
 
-<br/>
+### <samp>OPTIONS</samp>
 
-![Phoenix LiveView](https://img.shields.io/badge/Phoenix_LiveView-FD4F00?style=flat-square&logo=phoenixframework&logoColor=white)
-![Hono](https://img.shields.io/badge/Hono-E36002?style=flat-square&logo=hono&logoColor=white)
-![Fastify](https://img.shields.io/badge/Fastify-000?style=flat-square&logo=fastify&logoColor=white)
-![tRPC](https://img.shields.io/badge/tRPC-2596BE?style=flat-square&logo=trpc&logoColor=white)
-![TanStack](https://img.shields.io/badge/TanStack-FF4154?style=flat-square&logo=reactquery&logoColor=white)
-![DigitalOcean](https://img.shields.io/badge/DigitalOcean-0080FF?style=flat-square&logo=digitalocean&logoColor=white)
-![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=white)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+<dl>
+<dt><code>-l, --lead</code></dt>
+<dd>Set the technical direction, review the code and write the standards new engineers onboard into. Grew the engineering team at Blue from one to six.</dd>
+<dt><code>-d, --design</code></dt>
+<dd>Data models, APIs and system architecture. Designed the custom fields engine that Blue's tasks, forms, automations and reporting run on.</dd>
+<dt><code>-b, --build</code></dt>
+<dd>Web, mobile and backend in TypeScript and Elixir. React, Vue, Nuxt, NestJS, React Native, Phoenix LiveView, PostgreSQL, Oracle.</dd>
+<dt><code>-s, --ship</code></dt>
+<dd>Take work from statement of work to production in two-week sprints, as the client's technical counterpart.</dd>
+</dl>
 
-</div>
+### <samp>EXAMPLES</samp>
 
-<br/>
+<samp>$ <b>chanlito --lead</b> loan-origination</samp>\
+A loan origination platform for a Cambodian financial institution, replacing a manual process from the first field visit to disbursement. An offline-first Android tablet app for field agents, an approver portal and a NestJS API on Oracle. 2026 to now.
 
-## 🚀 What I Build
+<samp>$ <b>chanlito --design --build</b> blue</samp>\
+Blue, a project and process management SaaS with thousands of active users. A custom fields engine, a drag-and-drop form builder, real-time updates, and a BullMQ pipeline running 10,000+ jobs a day. 2018 to 2025.
 
-- **SaaS Applications** — End-to-end, from idea to shipped product
-- **Real-Time Web Apps** — Phoenix LiveView, WebSockets, live UIs
-- **APIs & Backend Services** — REST, GraphQL, tRPC
-- **Internal Tools** — Dashboards, admin panels, automation
-- **Starter Templates** — Boilerplates and dev tooling
-- **Performance-Focused Apps** — Fast, clean, production-grade
+<samp>$ <b>chanlito --ship</b> ai-workouts medicine-finder</samp>\
+AI workout generation with Gemini in Elixir and Phoenix LiveView, and an assistant that reads prescriptions and finds one pharmacy in Cambodia that can fill the whole list. 2026.
 
-<br/>
+### <samp>ENVIRONMENT</samp>
 
-## 🎮 When I'm Not Coding
+<samp>TZ=Asia/Phnom_Penh</samp>\
+Based in Phnom Penh, Cambodia (UTC+7). Works hybrid or remote with teams across time zones.
 
-> 🕹️ Playing **WoW** and **PoE**
->
-> ☕ Drinking way too much coffee
->
-> 🧽 Refactoring things that already work — and enjoying it
+<samp>LANGUAGE=km:es:en</samp>\
+Khmer, Spanish and English.
 
-<br/>
+### <samp>HISTORY</samp>
 
-<div align="center">
+<samp>2026.05</samp>&ensp;Technical Lead, Sean Oliver Consulting\
+<samp>2026.01</samp>&ensp;Software Engineer Consultant\
+<samp>2018.04</samp>&ensp;Founding Engineer, Blue\
+<samp>2017.01</samp>&ensp;Tech Lead, Pathmazing\
+<samp>2015.10</samp>&ensp;Software Engineer, Pathmazing\
+<samp>2010–15</samp>&ensp;B.Sc. Software Engineering, Universidad de Cienfuegos, Cuba
 
-<details>
-<summary><b>📊 GitHub Stats</b></summary>
-<br/>
+### <samp>BUGS</samp>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=chanlito&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=chanlito&show_icons=true&theme=default&hide_border=true" />
-  <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=chanlito&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" />
-</picture>
+Occasionally refactors code that already works.
 
-<br/><br/>
+### <samp>AUTHOR</samp>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=chanlito&theme=tokyonight&hide_border=true&background=0D1117" />
-  <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=chanlito&theme=default&hide_border=true" />
-  <img alt="GitHub Streak" src="https://streak-stats.demolab.com?user=chanlito&theme=tokyonight&hide_border=true&background=0D1117" />
-</picture>
+Chanlito Hem &lt;[chanlitohem@gmail.com](mailto:chanlitohem@gmail.com)&gt;
 
-</details>
+### <samp>SEE ALSO</samp>
 
-</div>
-
-<br/>
+[linkedin(1)](https://linkedin.com/in/chanlito)
 
 <div align="center">
 
-![Profile Views](https://komarev.com/ghpvc/?username=chanlito&color=a78bfa&style=flat-square&label=Profile+Views)
+<samp>chanlito 2026.05&emsp;&emsp;Phnom Penh&emsp;&emsp;CHANLITO(1)</samp>
 
-**Thanks for stopping by!** ✨
+<img src="https://komarev.com/ghpvc/?username=chanlito&style=flat-square&color=8250df&label=profile+views" alt="Profile views">
 
 </div>
