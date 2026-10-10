@@ -8,8 +8,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
-### Changed
-
 - Growing the engineering team behind the loan origination platform at Sean Oliver Consulting.
 
 ## [2026.05] - Technical Lead, Sean Oliver Consulting
@@ -57,17 +55,15 @@ A project and process management SaaS with thousands of active users.
 
 - Slowdowns at peak load, through indexing, query restructuring and caching.
 
-## [2017.01] - Tech Lead, Pathmazing
-
-### Changed
-
-- Promoted to lead backend architecture across client projects, and introduced code review and coding standards to the team.
-
 ## [2015.10] - Software Engineer, Pathmazing
 
 ### Added
 
 - Initial release. Web applications and REST APIs for enterprise clients in JavaScript and Node.js.
+
+### Changed
+
+- Promoted to tech lead in 2017. Owned backend architecture across client projects and introduced code review and coding standards.
 
 ## Dependencies
 

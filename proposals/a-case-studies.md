@@ -12,7 +12,7 @@ I build production software for businesses and grow the teams that run it. For a
 
 ### Loan origination platform
 
-<samp>2026–now · Sean Oliver Consulting · Technical Lead</samp>
+<samp>2026–now · Sean Oliver Consulting</samp>
 
 Replaces a manual loan process, from the field agent's first visit through multi-level approval to disbursement. I own the architecture and delivery, work with the client in two-week sprints, and set the coding standards, tests and dev environment that new engineers onboard into.
 

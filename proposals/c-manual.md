@@ -6,7 +6,7 @@
 
 #### SYNOPSIS
 
-<samp><b>chanlito</b> [<b>--lead</b>] [<b>--design</b>] [<b>--build</b>] [<b>--ship</b>] <i>idea</i></samp>
+<samp><b>chanlito</b> [<b>--lead</b>] [<b>--design</b>]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<b>--build</b>] [<b>--ship</b>] <i>idea</i></samp>
 
 #### DESCRIPTION
 
