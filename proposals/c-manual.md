@@ -1,49 +1,56 @@
-<samp>CHANLITO(1)&emsp;·&emsp;Engineering Manual</samp>
+<div align="center">
 
-#### NAME
+<samp>CHANLITO(1)&emsp;&emsp;User Commands&emsp;&emsp;CHANLITO(1)</samp>
+
+</div>
+
+### <samp>NAME</samp>
 
 **chanlito** – technical lead and full-stack engineer
 
-#### SYNOPSIS
+### <samp>SYNOPSIS</samp>
 
-<samp><b>chanlito</b> [<b>--lead</b>] [<b>--design</b>]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<b>--build</b>] [<b>--ship</b>] <i>idea</i></samp>
+<samp><b>chanlito</b> [<i>OPTION</i>]... <i>IDEA</i></samp>
 
-#### DESCRIPTION
+### <samp>DESCRIPTION</samp>
 
-**chanlito** turns business processes into production software and grows the teams that run it. Based in Phnom Penh, Cambodia, and works hybrid or remote. Over ten years of experience, including almost eight as the founding engineer at [Blue](https://blue.cc).
+**chanlito** turns business processes into production software and grows the teams that run it. Ten years in, including almost eight as the founding engineer at [Blue](https://blue.cc).
 
-Currently Technical Lead at Sean Oliver Consulting, leading a loan origination platform for a Cambodian financial institution.
+Currently Technical Lead at Sean Oliver Consulting, leading engineering on a loan origination platform for a Cambodian financial institution.
 
-#### OPTIONS
+### <samp>OPTIONS</samp>
 
 <dl>
-<dt><code>--lead</code></dt>
-<dd>Sets the technical direction, reviews the code and writes the standards new engineers onboard into. Grew Blue's engineering team from one to six.</dd>
-<dt><code>--design</code></dt>
-<dd>Schemas, APIs and architecture. Designed the custom fields engine that Blue's tasks, forms, automations and reporting are built on.</dd>
-<dt><code>--build</code></dt>
-<dd>Web, mobile and backend. TypeScript, Elixir, React, Vue, Nuxt, NestJS, React Native, Phoenix LiveView, PostgreSQL, Oracle.</dd>
-<dt><code>--ship</code></dt>
-<dd>From statement of work to production, in two-week sprints with the client.</dd>
+<dt><code>-l, --lead</code></dt>
+<dd>Set the technical direction, review the code and write the standards new engineers onboard into. Grew the engineering team at Blue from one to six.</dd>
+<dt><code>-d, --design</code></dt>
+<dd>Data models, APIs and system architecture. Designed the custom fields engine that Blue's tasks, forms, automations and reporting run on.</dd>
+<dt><code>-b, --build</code></dt>
+<dd>Web, mobile and backend in TypeScript and Elixir. React, Vue, Nuxt, NestJS, React Native, Phoenix LiveView, PostgreSQL, Oracle.</dd>
+<dt><code>-s, --ship</code></dt>
+<dd>Take work from statement of work to production in two-week sprints, as the client's technical counterpart.</dd>
 </dl>
 
-#### EXAMPLES
+### <samp>EXAMPLES</samp>
 
-<samp>$ chanlito --lead loan-origination</samp>\
-Offline-first tablet app for field agents, an approver portal and a NestJS API on Oracle, for a Cambodian financial institution. 2026 to now.
+<samp>$ <b>chanlito --lead</b> loan-origination</samp>\
+A loan origination platform for a Cambodian financial institution, replacing a manual process from the first field visit to disbursement. An offline-first Android tablet app for field agents, an approver portal and a NestJS API on Oracle. 2026 to now.
 
-<samp>$ chanlito --build blue</samp>\
-Project and process management SaaS with thousands of active users. Custom fields engine, form builder, real-time updates, and a job pipeline running 10,000+ jobs a day. 2018 to 2025.
+<samp>$ <b>chanlito --design --build</b> blue</samp>\
+Blue, a project and process management SaaS with thousands of active users. A custom fields engine, a drag-and-drop form builder, real-time updates, and a BullMQ pipeline running 10,000+ jobs a day. 2018 to 2025.
 
-<samp>$ chanlito --ship ai-products</samp>\
-AI workout generation with Gemini and Phoenix LiveView, and a medicine assistant that reads prescriptions and finds one pharmacy that can fill them. 2026.
+<samp>$ <b>chanlito --ship</b> ai-workouts medicine-finder</samp>\
+AI workout generation with Gemini in Elixir and Phoenix LiveView, and an assistant that reads prescriptions and finds one pharmacy in Cambodia that can fill the whole list. 2026.
 
-#### ENVIRONMENT
+### <samp>ENVIRONMENT</samp>
 
-<samp>TZ=Asia/Phnom_Penh</samp>&ensp;works with teams across time zones\
-<samp>LANG=km,es,en</samp>&ensp;Khmer, Spanish and English
+<samp>TZ=Asia/Phnom_Penh</samp>\
+Based in Phnom Penh, Cambodia (UTC+7). Works hybrid or remote with teams across time zones.
 
-#### HISTORY
+<samp>LANGUAGE=km:es:en</samp>\
+Khmer, Spanish and English.
+
+### <samp>HISTORY</samp>
 
 <samp>2026.05</samp>&ensp;Technical Lead, Sean Oliver Consulting\
 <samp>2026.01</samp>&ensp;Software Engineer Consultant\
@@ -52,12 +59,22 @@ AI workout generation with Gemini and Phoenix LiveView, and a medicine assistant
 <samp>2015.10</samp>&ensp;Software Engineer, Pathmazing\
 <samp>2010–15</samp>&ensp;B.Sc. Software Engineering, Universidad de Cienfuegos, Cuba
 
-#### BUGS
+### <samp>BUGS</samp>
 
 Occasionally refactors code that already works.
 
-#### SEE ALSO
+### <samp>AUTHOR</samp>
 
-[linkedin(1)](https://linkedin.com/in/chanlito), [mail(1)](mailto:chanlitohem@gmail.com)
+Chanlito Hem &lt;[chanlitohem@gmail.com](mailto:chanlitohem@gmail.com)&gt;
+
+### <samp>SEE ALSO</samp>
+
+[linkedin(1)](https://linkedin.com/in/chanlito)
+
+<div align="center">
+
+<samp>chanlito 2026.05&emsp;&emsp;Phnom Penh&emsp;&emsp;CHANLITO(1)</samp>
 
 <img src="https://komarev.com/ghpvc/?username=chanlito&style=flat-square&color=8250df&label=profile+views" alt="Profile views">
+
+</div>
