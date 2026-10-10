@@ -2,6 +2,9 @@
 
 export const W = 840;
 
+// Phone layout width. Close to a phone's README column, so text renders near 1:1.
+export const MOBILE_W = 340;
+
 export const SANS = "Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif";
 export const MONO = "'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace";
 

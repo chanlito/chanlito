@@ -11,7 +11,7 @@ import * as content from '../profile/content.mjs';
 import { collectActivity, emptyActivity } from './lib/activity.mjs';
 import { renderActivity, renderButton, renderChangelog, renderHeader, renderToolbox, renderWork } from './lib/cards.mjs';
 import { renderReadme } from './lib/readme.mjs';
-import { THEMES } from './lib/svg.mjs';
+import { MOBILE_W, THEMES, W } from './lib/svg.mjs';
 
 const root = new URL('../', import.meta.url);
 const assets = new URL('assets/', root);
@@ -21,21 +21,26 @@ async function exists(url) {
   return access(url).then(() => true, () => false);
 }
 
-async function writeThemed(name, render) {
+// Writes <name>-<theme>.svg for every theme, plus a -mobile variant drawn at
+// phone width unless the image is small enough to need none.
+async function writeThemed(name, render, { mobile = true } = {}) {
   for (const [theme, tokens] of Object.entries(THEMES)) {
-    await writeFile(new URL(`${name}-${theme}.svg`, assets), render(tokens));
+    await writeFile(new URL(`${name}-${theme}.svg`, assets), render(tokens, W));
+    if (mobile) await writeFile(new URL(`${name}-${theme}-mobile.svg`, assets), render(tokens, MOBILE_W));
   }
 }
 
 await mkdir(assets, { recursive: true });
 
-await writeThemed('header', (t) => renderHeader(t, content.header));
-for (const link of content.links) await writeThemed(`btn-${link.id}`, (t) => renderButton(t, link));
-await writeThemed('toolbox', (t) => renderToolbox(t, content.toolbox));
-for (const [i, item] of content.work.entries()) {
-  await writeThemed(`work-${item.id}`, (t) => renderWork(t, item, { first: i === 0 }));
+await writeThemed('header', (t, width) => renderHeader(t, content.header, { width }));
+for (const link of content.links) {
+  await writeThemed(`btn-${link.id}`, (t) => renderButton(t, link), { mobile: false });
 }
-await writeThemed('changelog', (t) => renderChangelog(t, content.changelog));
+await writeThemed('toolbox', (t, width) => renderToolbox(t, content.toolbox, { width }));
+for (const [i, item] of content.work.entries()) {
+  await writeThemed(`work-${item.id}`, (t, width) => renderWork(t, item, { first: i === 0, width }));
+}
+await writeThemed('changelog', (t, width) => renderChangelog(t, content.changelog, { width }));
 
 let activity = null;
 if (!offline) {
@@ -48,7 +53,7 @@ if (!offline) {
 }
 if (!activity && !(await exists(new URL('activity-light.svg', assets)))) activity = emptyActivity();
 if (activity) {
-  await writeThemed('activity', (t) => renderActivity(t, activity));
+  await writeThemed('activity', (t, width) => renderActivity(t, activity, { width }));
   console.log(`activity: ${activity.total} contributions, ${activity.items.length} recent items`);
 }
 

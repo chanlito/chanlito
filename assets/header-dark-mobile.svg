@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="478" viewBox="0 0 340 478" role="img" aria-labelledby="title">
+<title id="title">Chanlito Hem, Technical Lead · Senior Full-Stack Engineer</title>
+<text x="0" y="38" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#e6edf3" letter-spacing="-0.8">Chanlito Hem</text>
+<text x="0" y="66" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#e6edf3">Technical Lead · Senior Full-Stack</text>
+<text x="0" y="88" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#e6edf3">Engineer</text>
+<text x="0" y="112" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#9da7b3">Phnom Penh, Cambodia · Hybrid / Remote</text>
+<text x="0" y="140" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#9da7b3">I take ideas, design how they should work,</text>
+<text x="0" y="163" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#9da7b3">and turn them into real products people use.</text>
+<text x="0" y="186" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#9da7b3">Ten years of production SaaS, from founding</text>
+<text x="0" y="209" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#9da7b3">a platform to leading delivery for a</text>
+<text x="0" y="232" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#9da7b3">financial institution.</text>
+<rect x="0" y="257" width="340" height="217" rx="10" fill="#0b0f14" stroke="#30363d" stroke-width="1"/>
+<text x="20" y="293" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#9da7b3">$ whoami</text>
+<text x="20" y="316" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#e6edf3">10+ years shipping SaaS</text>
+<text x="20" y="339" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#e6edf3">founding engineer, Blue</text>
+<text x="20" y="362" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#e6edf3">tech lead, Sean Oliver</text>
+<text x="20" y="393" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#9da7b3">$ cat stack.txt</text>
+<text x="20" y="416" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#a78bfa">typescript elixir sql</text>
+<text x="20" y="447" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#9da7b3">$</text>
+<rect x="35.86" y="435" width="8" height="15" fill="#a78bfa"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/></rect>
+</svg>

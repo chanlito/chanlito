@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="655" viewBox="0 0 340 655" role="img" aria-labelledby="title">
+<title id="title">Changelog</title>
+<line x1="6" y1="20" x2="6" y2="587" stroke="#d0d7de" stroke-width="1"/>
+<circle cx="6" cy="20" r="4.5" fill="#6d4aff"/>
+<text x="26" y="24" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" fill="#6d4aff">2026.05</text>
+<text x="26" y="48" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#1f2328">Technical Lead · Sean Oliver</text>
+<text x="26" y="69" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#1f2328">Consulting</text>
+<text x="26" y="90" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#59636e">Leading the loan origination platform and</text>
+<text x="26" y="109" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#59636e">growing the team.</text>
+<circle cx="6" cy="154" r="4.5" fill="#6d4aff"/>
+<text x="26" y="158" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" fill="#6d4aff">2026.01</text>
+<text x="26" y="182" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#1f2328">Independent consultant</text>
+<text x="26" y="203" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#59636e">Scoped, built and deployed two AI products for</text>
+<text x="26" y="222" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#59636e">clients.</text>
+<circle cx="6" cy="267" r="4.5" fill="#6d4aff"/>
+<text x="26" y="271" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" fill="#6d4aff">2018.04</text>
+<text x="26" y="295" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#1f2328">Founding Engineer · Blue</text>
+<text x="26" y="316" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#59636e">Built the product and grew the team from 1 to 6</text>
+<text x="26" y="335" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#59636e">engineers over 7 years 9 months.</text>
+<circle cx="6" cy="380" r="4.5" fill="#6d4aff"/>
+<text x="26" y="384" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" fill="#6d4aff">2017.01</text>
+<text x="26" y="408" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#1f2328">Tech Lead · Pathmazing</text>
+<text x="26" y="429" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#59636e">Owned backend architecture and introduced code</text>
+<text x="26" y="448" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#59636e">review.</text>
+<circle cx="6" cy="493" r="4.5" fill="#6d4aff"/>
+<text x="26" y="497" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" fill="#6d4aff">2015.10</text>
+<text x="26" y="521" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#1f2328">Software Engineer · Pathmazing</text>
+<text x="26" y="542" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#59636e">Web apps and REST APIs for enterprise clients.</text>
+<circle cx="6" cy="587" r="4.5" fill="#ffffff" stroke="#59636e" stroke-width="1.5"/>
+<text x="26" y="591" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" fill="#59636e">init</text>
+<text x="26" y="615" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#1f2328">B.Sc. Software Engineering</text>
+<text x="26" y="636" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#59636e">Universidad de Cienfuegos, Cuba · 2010 – 2015</text>
+</svg>

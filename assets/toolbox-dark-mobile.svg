@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="286" viewBox="0 0 340 286" role="img" aria-labelledby="title">
+<title id="title">Toolbox</title>
+<text x="0" y="12" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#9da7b3" letter-spacing="1">TOOLBOX</text>
+<text x="0" y="44" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#a78bfa">lang</text>
+<text x="80" y="44" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#e6edf3">TypeScript, Elixir, SQL</text>
+<text x="0" y="74" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#a78bfa">frontend</text>
+<text x="80" y="74" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#e6edf3">React, Vue, Nuxt, Next.js, TanStack</text>
+<text x="0" y="104" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#a78bfa">backend</text>
+<text x="80" y="104" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#e6edf3">Node.js, NestJS, Phoenix LiveView,</text>
+<text x="80" y="124" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#e6edf3">GraphQL</text>
+<text x="0" y="154" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#a78bfa">mobile</text>
+<text x="80" y="154" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#e6edf3">React Native, Expo</text>
+<text x="0" y="184" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#a78bfa">data</text>
+<text x="80" y="184" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#e6edf3">PostgreSQL, MySQL, Oracle, Redis</text>
+<text x="0" y="214" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#a78bfa">auth</text>
+<text x="80" y="214" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#e6edf3">OIDC, Entra ID, Keycloak</text>
+<text x="0" y="244" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#a78bfa">infra</text>
+<text x="80" y="244" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#e6edf3">Docker, AWS, GitHub Actions</text>
+<text x="0" y="274" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#a78bfa">ai</text>
+<text x="80" y="274" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#e6edf3">OpenAI, Gemini, Claude Code</text>
+</svg>

@@ -385,7 +385,6 @@
 <rect x="827.1" y="109.6" width="12.9" height="12.9" rx="2" fill="#ebedf0"/>
 <rect x="827.1" y="125.5" width="12.9" height="12.9" rx="2" fill="#ebedf0"/>
 <rect x="827.1" y="141.4" width="12.9" height="12.9" rx="2" fill="#ebedf0"/>
-<text x="0" y="175.3" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#59636e">Public and private contributions from both accounts, merged by day.</text>
 <text x="732" y="175.3" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#59636e" text-anchor="end">Less</text>
 <rect x="740" y="165.3" width="11" height="11" rx="2" fill="#ebedf0"/>
 <rect x="754" y="165.3" width="11" height="11" rx="2" fill="#d9cfff"/>
@@ -393,6 +392,7 @@
 <rect x="782" y="165.3" width="11" height="11" rx="2" fill="#8c6dff"/>
 <rect x="796" y="165.3" width="11" height="11" rx="2" fill="#5a35f0"/>
 <text x="840" y="175.3" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#59636e" text-anchor="end">More</text>
+<text x="0" y="175.3" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#59636e">Public and private contributions from both accounts, merged by day.</text>
 <text x="0" y="217.3" font-family="'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#59636e" letter-spacing="1">RECENTLY SHIPPED</text>
 <text x="0" y="243.3" font-family="Geist, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#59636e">Most of my recent work lives in private client repositories.</text>
 </svg>

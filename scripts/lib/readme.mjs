@@ -3,12 +3,25 @@
 
 import { esc } from './svg.mjs';
 
-function picture(name, alt) {
-  return `<picture><source media="(prefers-color-scheme: dark)" srcset="assets/${name}-dark.svg"><img alt="${esc(alt)}" src="assets/${name}-light.svg"></picture>`;
+// Phones get the -mobile variants: an 840px image scaled into a phone's README
+// column would shrink its text to a few pixels. Sources are tried in order.
+const PHONE = '(max-width: 600px)';
+
+function picture(name, alt, { mobile = true } = {}) {
+  const sources = [
+    ...(mobile
+      ? [
+          `<source media="${PHONE} and (prefers-color-scheme: dark)" srcset="assets/${name}-dark-mobile.svg">`,
+          `<source media="${PHONE}" srcset="assets/${name}-light-mobile.svg">`,
+        ]
+      : []),
+    `<source media="(prefers-color-scheme: dark)" srcset="assets/${name}-dark.svg">`,
+  ];
+  return `<picture>${sources.join('')}<img alt="${esc(alt)}" src="assets/${name}-light.svg"></picture>`;
 }
 
 export function renderReadme({ accounts, header, links, toolbox, work, now, changelog, footer }) {
-  const buttons = links.map((l) => `<a href="${esc(l.href)}">${picture(`btn-${l.id}`, l.label)}</a>`).join('\n');
+  const buttons = links.map((l) => `<a href="${esc(l.href)}">${picture(`btn-${l.id}`, l.label, { mobile: false })}</a>`).join('\n');
 
   const workBlocks = work.map((item) => {
     const alt = [`${item.title}, ${item.date}.`, item.subtitle, ...item.bullets, `Stack: ${item.chips.join(', ')}.`].join(' ');
