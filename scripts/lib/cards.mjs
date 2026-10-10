@@ -1,32 +1,33 @@
 // One render function per SVG on the profile. Each takes a theme and its content
-// and returns a complete SVG document string.
+// and returns a complete SVG document string. Backgrounds stay transparent so
+// the page's own background shows through; only the terminal and buttons are filled.
 
 import { W, MONO, document, line, rect, text, textWidth, truncate, wrap } from './svg.mjs';
 
 export function renderHeader(t, h) {
-  const pad = 36;
   const termW = 290;
-  const leftW = W - pad * 2 - 32 - termW;
+  const leftW = W - termW - 48;
   const bio = wrap(h.bio, leftW, 15);
-  const bioTop = 184;
-  const height = Math.max(300, bioTop + (bio.length - 1) * 24 + 44);
+
+  const step = 23;
+  const breaks = h.terminal.filter((l, i) => i > 0 && (l.kind === 'prompt' || l.kind === 'cursor')).length;
+  const blockH = h.terminal.length * step + breaks * 8;
+  const th = blockH + 40;
+  const ty = 8;
+
+  const bioTop = 150;
+  const height = Math.max(ty + th + 8, bioTop + (bio.length - 1) * 24 + 16);
 
   const parts = [
-    rect(0.5, 0.5, W - 1, height - 1, { rx: 14, fill: t.panel, stroke: t.border }),
-    text(pad, 84, h.name, { size: 46, weight: 700, fill: t.text, spacing: -1.2 }),
-    text(pad, 118, h.title, { size: 18, weight: 500, fill: t.text }),
-    text(pad, 146, h.location, { size: 13, family: MONO, fill: t.muted }),
-    ...bio.map((l, i) => text(pad, bioTop + i * 24, l, { size: 15, fill: t.muted })),
+    text(0, 58, h.name, { size: 46, weight: 700, fill: t.text, spacing: -1.2 }),
+    text(0, 92, h.title, { size: 18, weight: 500, fill: t.text }),
+    text(0, 120, h.location, { size: 13, family: MONO, fill: t.muted }),
+    ...bio.map((l, i) => text(0, bioTop + i * 24, l, { size: 15, fill: t.muted })),
   ];
 
-  const tx = W - pad - termW;
-  const ty = pad;
-  const th = height - pad * 2;
-  const step = 23;
-  const prompts = h.terminal.filter((l, i) => i > 0 && l.kind !== 'out' && l.kind !== 'accent').length;
-  const blockH = h.terminal.length * step + prompts * 8;
-  let y = ty + (th - blockH) / 2 + 16;
+  const tx = W - termW;
   parts.push(rect(tx, ty, termW, th, { rx: 10, fill: t.code, stroke: t.codeBorder }));
+  let y = ty + 20 + 16;
   h.terminal.forEach((l, i) => {
     if (i > 0 && (l.kind === 'prompt' || l.kind === 'cursor')) y += 8;
     const opts = { size: 13, family: MONO };
@@ -53,7 +54,7 @@ export function renderButton(t, link) {
   const height = 44;
   const box = link.primary
     ? rect(0, 0, width, height, { rx: 8, fill: t.accent })
-    : rect(0.5, 0.5, width - 1, height - 1, { rx: 8, fill: t.bg, stroke: t.border });
+    : rect(0.5, 0.5, width - 1, height - 1, { rx: 8, stroke: t.border });
   const label = text(width / 2, 27, link.label, {
     size: 14,
     weight: 600,
@@ -64,86 +65,77 @@ export function renderButton(t, link) {
 }
 
 export function renderToolbox(t, rows) {
-  const pad = 22;
-  const colGap = 28;
-  const colW = (W - pad * 2 - colGap) / 2;
-  const rowH = 34;
+  const colGap = 32;
+  const colW = (W - colGap) / 2;
+  const rowH = 30;
   const perCol = Math.ceil(rows.length / 2);
-  const top = 48;
-  const height = top + perCol * rowH + 12;
+  const top = 26;
+  const height = top + perCol * rowH;
 
-  const parts = [
-    rect(0.5, 0.5, W - 1, height - 1, { rx: 12, fill: t.panel, stroke: t.border }),
-    text(pad, 32, 'TOOLBOX', { size: 11, family: MONO, fill: t.muted, spacing: 1 }),
-  ];
+  const parts = [text(0, 12, 'TOOLBOX', { size: 11, family: MONO, fill: t.muted, spacing: 1 })];
   rows.forEach(([label, value], i) => {
-    const col = Math.floor(i / perCol);
-    const row = i % perCol;
-    const x = pad + col * (colW + colGap);
-    const y = top + row * rowH;
-    parts.push(text(x, y + 21, label, { size: 11, family: MONO, fill: t.accent }));
-    parts.push(text(x + 76, y + 21, truncate(value, colW - 76, 13), { size: 13, fill: t.text }));
-    if (row < perCol - 1) parts.push(line(x, y + rowH, x + colW, y + rowH, t.border));
+    const x = Math.floor(i / perCol) * (colW + colGap);
+    const y = top + (i % perCol) * rowH + 18;
+    parts.push(text(x, y, label, { size: 11, family: MONO, fill: t.accent }));
+    parts.push(text(x + 76, y, truncate(value, colW - 76, 13), { size: 13, fill: t.text }));
   });
 
   return document({ height, title: 'Toolbox', body: parts.join('\n') });
 }
 
-export function renderWork(t, item) {
-  const pad = 24;
-  const inner = W - pad * 2;
-  const parts = [];
+// Projects after the first are separated by a hairline above the title.
+export function renderWork(t, item, { first = false } = {}) {
+  const top = first ? 22 : 42;
+  const parts = first ? [] : [line(0, 0.5, W, 0.5, t.border)];
 
   const dateW = textWidth(item.date, 12, 'mono');
   const title = item.href ? `${item.title} ↗` : item.title;
-  parts.push(text(pad, 48, truncate(title, inner - dateW - 16, 18, 'bold'), { size: 18, weight: 600, fill: t.text }));
-  parts.push(text(W - pad, 48, item.date, { size: 12, family: MONO, fill: t.muted, anchor: 'end' }));
+  parts.push(text(0, top, truncate(title, W - dateW - 16, 18, 'bold'), { size: 18, weight: 600, fill: t.text }));
+  parts.push(text(W, top, item.date, { size: 12, family: MONO, fill: t.muted, anchor: 'end' }));
 
-  let y = 76;
-  for (const l of wrap(item.subtitle, inner, 14)) {
-    parts.push(text(pad, y, l, { size: 14, fill: t.muted }));
+  let y = top + 26;
+  for (const l of wrap(item.subtitle, W, 14)) {
+    parts.push(text(0, y, l, { size: 14, fill: t.muted }));
     y += 21;
   }
 
   y += 10;
   for (const bullet of item.bullets) {
-    const lines = wrap(bullet, inner - 18, 14);
-    parts.push(`<circle cx="${pad + 5}" cy="${y - 5}" r="2.5" fill="${t.muted}"/>`);
-    for (const l of lines) {
-      parts.push(text(pad + 18, y, l, { size: 14, fill: t.text }));
+    parts.push(`<circle cx="5" cy="${y - 5}" r="2.5" fill="${t.muted}"/>`);
+    for (const l of wrap(bullet, W - 18, 14)) {
+      parts.push(text(18, y, l, { size: 14, fill: t.text }));
       y += 21;
     }
     y += 6;
   }
 
-  let cx = pad;
-  let cy = y + 4;
-  for (const chip of item.chips) {
-    const w = Math.ceil(textWidth(chip, 12, 'mono') + 18);
-    if (cx + w > W - pad) {
-      cx = pad;
-      cy += 32;
-    }
-    parts.push(rect(cx + 0.5, cy + 0.5, w - 1, 25, { rx: 6, fill: t.panel, stroke: t.border }));
-    parts.push(text(cx + 9, cy + 17, chip, { size: 12, family: MONO, fill: t.text }));
-    cx += w + 6;
+  y += 6;
+  const stack = item.chips.flatMap((c) => c.split(' · ')).join('  ·  ');
+  for (const l of wrap(stack, W, 12, 'mono')) {
+    parts.push(text(0, y, l, { size: 12, family: MONO, fill: t.accent }));
+    y += 20;
   }
 
-  const height = cy + 26 + pad;
-  parts.unshift(rect(0.5, 0.5, W - 1, height - 1, { rx: 12, fill: t.bg, stroke: t.border }));
-  return document({ height, title: item.title, body: parts.join('\n') });
+  return document({ height: y + 4, title: item.title, body: parts.join('\n') });
 }
 
 export function renderChangelog(t, rows) {
-  const rowH = 62;
+  const rowH = 58;
   const height = rows.length * rowH;
-  const parts = [rect(0.5, 0.5, W - 1, height - 1, { rx: 12, fill: t.bg, stroke: t.border })];
+  const dotX = 6;
+  const firstDot = 20;
+  const lastDot = (rows.length - 1) * rowH + 20;
+  const parts = [line(dotX, firstDot, dotX, lastDot, t.border)];
   rows.forEach((r, i) => {
     const y = i * rowH;
-    parts.push(text(20, y + 27, r.version, { size: 13, weight: 500, family: MONO, fill: r.muted ? t.muted : t.accent }));
-    parts.push(text(112, y + 27, r.title, { size: 15, weight: 600, fill: t.text }));
-    parts.push(text(112, y + 47, truncate(r.desc, W - 132, 13), { size: 13, fill: t.muted }));
-    if (i < rows.length - 1) parts.push(line(0, y + rowH, W, y + rowH, t.border));
+    parts.push(
+      r.muted
+        ? `<circle cx="${dotX}" cy="${y + 20}" r="4.5" fill="${t.bg}" stroke="${t.muted}" stroke-width="1.5"/>`
+        : `<circle cx="${dotX}" cy="${y + 20}" r="4.5" fill="${t.accent}"/>`,
+    );
+    parts.push(text(26, y + 24, r.version, { size: 13, weight: 500, family: MONO, fill: r.muted ? t.muted : t.accent }));
+    parts.push(text(108, y + 24, r.title, { size: 15, weight: 600, fill: t.text }));
+    parts.push(text(108, y + 44, truncate(r.desc, W - 108, 13), { size: 13, fill: t.muted }));
   });
   return document({ height, title: 'Changelog', body: parts.join('\n') });
 }
@@ -165,18 +157,17 @@ function levels(weeks) {
 }
 
 export function renderActivity(t, a) {
-  const pad = 20;
-  const cell = 11;
-  const stepX = 14;
-  const gridW = a.weeks.length * stepX - 3;
-  const x0 = Math.round((W - gridW) / 2);
-  const gridTop = 76;
+  // Size the cells so the 53 weeks span the full width.
+  const step = (W + 3) / a.weeks.length;
+  const cell = step - 3;
+  const r = (n) => Math.round(n * 10) / 10;
+  const gridTop = 46;
   const level = levels(a.weeks);
   const parts = [];
 
-  parts.push(text(pad, 36, 'ACTIVITY · GITLAB + GITHUB · LAST 12 MONTHS', { size: 11, family: MONO, fill: t.muted, spacing: 1 }));
+  parts.push(text(0, 12, 'ACTIVITY · GITLAB + GITHUB · LAST 12 MONTHS', { size: 11, family: MONO, fill: t.muted, spacing: 1 }));
   parts.push(
-    text(W - pad, 36, `${a.total.toLocaleString('en-US')} contributions · updated ${a.updated}`, {
+    text(W, 12, `${a.total.toLocaleString('en-US')} contributions · updated ${a.updated}`, {
       size: 11,
       family: MONO,
       fill: t.muted,
@@ -187,7 +178,7 @@ export function renderActivity(t, a) {
   let lastMonth = -1;
   let lastLabelX = -Infinity;
   a.weeks.forEach((week, w) => {
-    const x = x0 + w * stepX;
+    const x = r(w * step);
     const month = Number(week[0].date.slice(5, 7)) - 1;
     if (month !== lastMonth) {
       if (x - lastLabelX >= 32 && w < a.weeks.length - 2) {
@@ -197,52 +188,36 @@ export function renderActivity(t, a) {
       lastMonth = month;
     }
     week.forEach((day, d) => {
-      parts.push(rect(x, gridTop + d * stepX, cell, cell, { rx: 2, fill: t.heat[level(day.count)] }));
+      parts.push(rect(x, r(gridTop + d * step), r(cell), r(cell), { rx: 2, fill: t.heat[level(day.count)] }));
     });
   });
 
-  const legendY = gridTop + 7 * stepX + 22;
-  parts.push(text(x0, legendY, 'Public and private contributions from both accounts, merged by day.', { size: 12, fill: t.muted }));
-  const legendX = x0 + gridW - (5 * stepX - 3);
+  const legendY = r(gridTop + 7 * step + 18);
+  parts.push(text(0, legendY, 'Public and private contributions from both accounts, merged by day.', { size: 12, fill: t.muted }));
+  const legendX = W - 30 - 5 * 14;
   parts.push(text(legendX - 8, legendY, 'Less', { size: 12, fill: t.muted, anchor: 'end' }));
-  t.heat.forEach((fill, i) => parts.push(rect(legendX + i * stepX, legendY - 10, cell, cell, { rx: 2, fill })));
-  parts.push(text(legendX + 5 * stepX + 5, legendY, 'More', { size: 12, fill: t.muted }));
+  t.heat.forEach((fill, i) => parts.push(rect(legendX + i * 14, legendY - 10, 11, 11, { rx: 2, fill })));
+  parts.push(text(W, legendY, 'More', { size: 12, fill: t.muted, anchor: 'end' }));
 
-  const bandY = legendY + 20;
-  parts.push(rect(0, bandY, W, 30, { fill: t.panel }));
-  parts.push(line(0, bandY, W, bandY, t.border));
-  parts.push(line(0, bandY + 30, W, bandY + 30, t.border));
-  parts.push(text(pad, bandY + 19, 'RECENTLY SHIPPED', { size: 11, family: MONO, fill: t.muted, spacing: 1 }));
-
-  const rowH = 38;
-  let y = bandY + 30;
+  let y = legendY + 42;
+  parts.push(text(0, y, 'RECENTLY SHIPPED', { size: 11, family: MONO, fill: t.muted, spacing: 1 }));
+  y += 8;
+  const rowH = 28;
   if (a.items.length === 0) {
-    parts.push(text(pad, y + 24, 'Most of my recent work lives in private client repositories.', { size: 13, fill: t.muted }));
+    parts.push(text(0, y + 18, 'Most of my recent work lives in private client repositories.', { size: 13, fill: t.muted }));
     y += rowH;
   }
-  a.items.forEach((item, i) => {
+  for (const item of a.items) {
     const dateW = textWidth(item.date, 12, 'mono');
-    const label = truncate(`${item.repo} · ${item.text}`, W - pad * 2 - dateW - 24, 12, 'mono');
-    parts.push(text(pad, y + 24, label, { size: 12, family: MONO, fill: t.text }));
-    parts.push(text(W - pad, y + 24, item.date, { size: 12, family: MONO, fill: t.muted, anchor: 'end' }));
-    if (i < a.items.length - 1) parts.push(line(0, y + rowH, W, y + rowH, t.border));
+    const label = truncate(`${item.repo} · ${item.text}`, W - dateW - 24, 12, 'mono');
+    parts.push(text(0, y + 18, label, { size: 12, family: MONO, fill: t.text }));
+    parts.push(text(W, y + 18, item.date, { size: 12, family: MONO, fill: t.muted, anchor: 'end' }));
     y += rowH;
-  });
+  }
 
-  const height = y + 2;
-  // Clip the band to the card's rounded corners and draw the border on top of it.
-  const clip = `<clipPath id="card"><rect x="0" y="0" width="${W}" height="${height}" rx="12"/></clipPath>`;
-  const body = [
-    `<defs>${clip}</defs>`,
-    rect(0, 0, W, height, { rx: 12, fill: t.bg }),
-    `<g clip-path="url(#card)">`,
-    ...parts,
-    '</g>',
-    rect(0.5, 0.5, W - 1, height - 1, { rx: 12, stroke: t.border }),
-  ];
   return document({
-    height,
+    height: r(y + 4),
     title: `${a.total} contributions across GitLab and GitHub in the last 12 months`,
-    body: body.join('\n'),
+    body: parts.join('\n'),
   });
 }

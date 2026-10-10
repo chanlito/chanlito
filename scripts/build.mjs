@@ -32,7 +32,9 @@ await mkdir(assets, { recursive: true });
 await writeThemed('header', (t) => renderHeader(t, content.header));
 for (const link of content.links) await writeThemed(`btn-${link.id}`, (t) => renderButton(t, link));
 await writeThemed('toolbox', (t) => renderToolbox(t, content.toolbox));
-for (const item of content.work) await writeThemed(`work-${item.id}`, (t) => renderWork(t, item));
+for (const [i, item] of content.work.entries()) {
+  await writeThemed(`work-${item.id}`, (t) => renderWork(t, item, { first: i === 0 }));
+}
 await writeThemed('changelog', (t) => renderChangelog(t, content.changelog));
 
 let activity = null;
