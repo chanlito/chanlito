@@ -1,0 +1,15 @@
+{
+  "name": "profile-readme",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun build.ts",
+    "polaroid": "sh avatar/record.sh"
+  },
+  "dependencies": {
+    "harfbuzzjs": "0.4.12"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}
