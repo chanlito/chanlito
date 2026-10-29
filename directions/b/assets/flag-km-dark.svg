@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" role="img"><style>
+.pop{transform-box:fill-box;transform-origin:center;animation:pop .7s cubic-bezier(0.34, 1.56, 0.64, 1) backwards}
+.drop{transform-box:fill-box;transform-origin:50% 0;animation:drop .8s cubic-bezier(0.34, 1.56, 0.64, 1) backwards}
+.draw{stroke-dasharray:1;animation:draw .9s ease-out backwards}
+.write{animation:write 1s steps(24,end) backwards}
+.swing{transform-box:fill-box;transform-origin:50% 0;animation:swing 1.4s ease-out backwards}
+.fade{animation:fade .6s ease-out backwards}
+.rise{animation:rise .6s cubic-bezier(0.34, 1.56, 0.64, 1) backwards}
+@keyframes pop{0%{transform:scale(0) rotate(-12deg);opacity:0}60%{opacity:1}}
+@keyframes drop{0%{transform:translateY(-40px) rotate(-8deg);opacity:0}50%{opacity:1}}
+@keyframes draw{0%{stroke-dashoffset:1}}
+@keyframes write{0%{clip-path:inset(0 100% 0 0)}100%{clip-path:inset(0 0 0 0)}}
+@keyframes swing{0%{transform:rotate(9deg)}20%{transform:rotate(-6deg)}40%{transform:rotate(4deg)}60%{transform:rotate(-2deg)}80%{transform:rotate(1deg)}100%{transform:rotate(0)}}
+@keyframes fade{0%{opacity:0}}
+@keyframes rise{0%{transform:translateY(14px);opacity:0}}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style><defs></defs><defs><clipPath id="flag96"><circle cx="11.5" cy="11.5" r="10"/></clipPath></defs><circle cx="14" cy="14" r="10" fill="#fff6da"/><g clip-path="url(#flag96)"><rect x="-3.5" y="1.5" width="30" height="20" fill="#0b3fa8"/><rect x="-3.5" y="6.5" width="30" height="10" fill="#e01e37"/><path fill="#fff" stroke="#1e1b2e" stroke-width="0.42" d="M4.300000000000001 14.3h14.399999999999999v-1.2h-14.399999999999999z M5.5 13.100000000000001v-1.92l0.96 -2.4l0.96 2.4h1.92l0.96 -3.5999999999999996l0.96 3.5999999999999996h1.92l0.96 -2.4l0.96 2.4v1.92z"/></g><circle cx="11.5" cy="11.5" r="10" fill="none" stroke="#fff6da" stroke-width="2.5"/></svg>

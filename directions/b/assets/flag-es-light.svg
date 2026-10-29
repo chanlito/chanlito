@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" role="img"><style>
+.pop{transform-box:fill-box;transform-origin:center;animation:pop .7s cubic-bezier(0.34, 1.56, 0.64, 1) backwards}
+.drop{transform-box:fill-box;transform-origin:50% 0;animation:drop .8s cubic-bezier(0.34, 1.56, 0.64, 1) backwards}
+.draw{stroke-dasharray:1;animation:draw .9s ease-out backwards}
+.write{animation:write 1s steps(24,end) backwards}
+.swing{transform-box:fill-box;transform-origin:50% 0;animation:swing 1.4s ease-out backwards}
+.fade{animation:fade .6s ease-out backwards}
+.rise{animation:rise .6s cubic-bezier(0.34, 1.56, 0.64, 1) backwards}
+@keyframes pop{0%{transform:scale(0) rotate(-12deg);opacity:0}60%{opacity:1}}
+@keyframes drop{0%{transform:translateY(-40px) rotate(-8deg);opacity:0}50%{opacity:1}}
+@keyframes draw{0%{stroke-dashoffset:1}}
+@keyframes write{0%{clip-path:inset(0 100% 0 0)}100%{clip-path:inset(0 0 0 0)}}
+@keyframes swing{0%{transform:rotate(9deg)}20%{transform:rotate(-6deg)}40%{transform:rotate(4deg)}60%{transform:rotate(-2deg)}80%{transform:rotate(1deg)}100%{transform:rotate(0)}}
+@keyframes fade{0%{opacity:0}}
+@keyframes rise{0%{transform:translateY(14px);opacity:0}}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style><defs></defs><defs><clipPath id="flag97"><circle cx="11.5" cy="11.5" r="10"/></clipPath></defs><circle cx="14" cy="14" r="10" fill="#1e1b2e"/><g clip-path="url(#flag97)"><rect x="-3.5" y="1.5" width="30" height="4" fill="#1f4ea3"/><rect x="-3.5" y="5.5" width="30" height="4" fill="#fff"/><rect x="-3.5" y="9.5" width="30" height="4" fill="#1f4ea3"/><rect x="-3.5" y="13.5" width="30" height="4" fill="#fff"/><rect x="-3.5" y="17.5" width="30" height="4" fill="#1f4ea3"/><path d="M-3.5 1.5L11.5 11.5L-3.5 21.5z" fill="#d22f3c"/><path d="M1.6000000000000008 8.3L2.3899833790810847 10.412681159560071L4.643380852144492 10.511145618000167L2.878219957900687 11.91531884043993L3.4809128073359146 14.088854381999832L1.6000000000000005 12.844L-0.2809128073359133 14.088854381999832L0.3217800420993142 11.91531884043993L-1.4433808521444913 10.51114561800017L0.8100166209189165 10.412681159560071z" fill="#fff"/></g><circle cx="11.5" cy="11.5" r="10" fill="none" stroke="#1e1b2e" stroke-width="2.5"/></svg>
