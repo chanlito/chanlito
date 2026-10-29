@@ -1,80 +1,73 @@
-<div align="center">
+<p><a href="https://chanlito.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg"><img src="assets/hero-light.svg" alt="Hi, I'm Chanlito. I'm a technical lead in Phnom Penh. I build SaaS and enterprise products, and I write about TypeScript, offline-first apps, and shipping software in Cambodia." width="500"></picture></a><a href="https://chanlito.dev/about/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/polaroid-dark.webp"><img src="assets/polaroid-light.webp" alt="Mini Chanlito, a toy-style 3D version of Chanlito in a plaid flannel shirt, waves and then does the sampeah, the Khmer greeting with palms together." width="330"></picture></a></p>
 
-<samp>CHANLITO(1)&emsp;&emsp;User Commands&emsp;&emsp;CHANLITO(1)</samp>
+<h3><picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-now-dark.svg"><img src="assets/h-now-light.svg" alt="Right now"></picture></h3>
 
-</div>
+- Leading the build of a **loan origination system** for a financial institution in Cambodia.
+- Building **[chanlito.dev](https://chanlito.dev)** on holidays and weekends, and learning Astro with it.
+- Open to talking about freelance and consulting work.
 
-### <samp>NAME</samp>
+<h3><picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-built-dark.svg"><img src="assets/h-built-light.svg" alt="Things I built"></picture></h3>
 
-**chanlito** – technical lead and full-stack engineer
+<p><a href="https://chanlito.dev/projects/#blue"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-blue-dark.svg"><img src="assets/card-blue-light.svg" alt="Blue, 2018 – 2025. A process management platform thousands of teams run their work on." width="208"></picture></a><a href="https://chanlito.dev/projects/#loan-system"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-loan-system-dark.svg"><img src="assets/card-loan-system-light.svg" alt="Loan Origination System, 2026 – now. Replaces a paper loan process at a financial institution in Cambodia." width="208"></picture></a><a href="https://chanlito.dev/projects/#caracol"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-caracol-dark.svg"><img src="assets/card-caracol-light.svg" alt="Caracol Sports Club, 2026. The website and workout app for a gym and pool in Phnom Penh." width="208"></picture></a><a href="https://chanlito.dev/projects/#tesjor"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-tesjor-dark.svg"><img src="assets/card-tesjor-light.svg" alt="Tesjor, 2016 – 2017. Cambodia's first cashless food ordering app." width="208"></picture></a></p>
 
-### <samp>SYNOPSIS</samp>
+<h3><picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-ink-dark.svg"><img src="assets/h-ink-light.svg" alt="Latest articles"></picture></h3>
 
-<samp><b>chanlito</b> [<i>OPTION</i>]... <i>IDEA</i></samp>
+<p><a href="https://chanlito.dev/articles/how-id-do-pull-request-review-today/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/article-0-dark.svg"><img src="assets/article-0-light.svg" alt="How I'd do pull request review today" width="278"></picture></a><a href="https://chanlito.dev/articles/green-tests-broken-app-why-our-agents-have-to-show-their-work/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/article-1-dark.svg"><img src="assets/article-1-light.svg" alt="Green Tests, Broken App: Why Our Agents Have to Show Their Work" width="278"></picture></a><a href="https://chanlito.dev/articles/why-good-software-ideas-in-cambodia-stay-ideas/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/article-2-dark.svg"><img src="assets/article-2-light.svg" alt="Why good software ideas in Cambodia stay ideas" width="278"></picture></a></p>
 
-### <samp>DESCRIPTION</samp>
+<h3><picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-hi-dark.svg"><img src="assets/h-hi-light.svg" alt="Let's build something"></picture></h3>
 
-**chanlito** turns business processes into production software and grows the teams that run it. Ten years in, including almost eight as the founding engineer at [Blue](https://blue.cc).
+Got a product to build, a team that needs a technical lead, or just a question? Send me a note.
 
-Currently Technical Lead at Sean Oliver Consulting, leading engineering on a loan origination platform for a Cambodian financial institution.
+<p><a href="mailto:hi@chanlito.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-email-dark.svg"><img src="assets/btn-email-light.svg" alt="Email me at hi@chanlito.dev" height="62"></picture></a> <a href="https://www.linkedin.com/in/chanlito"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-linkedin-dark.svg"><img src="assets/btn-linkedin-light.svg" alt="LinkedIn" height="62"></picture></a> <a href="https://chanlito.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-site-dark.svg"><img src="assets/btn-site-light.svg" alt="chanlito.dev" height="62"></picture></a></p>
 
-### <samp>OPTIONS</samp>
+<details>
+<summary><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flag-km-dark.svg"><img src="assets/flag-km-light.svg" alt="" width="26" align="top"></picture> <b>អានជាភាសាខ្មែរ</b></summary>
 
-<dl>
-<dt><code>-l, --lead</code></dt>
-<dd>Set the technical direction, review the code and write the standards new engineers onboard into. Grew the engineering team at Blue from one to six.</dd>
-<dt><code>-d, --design</code></dt>
-<dd>Data models, APIs and system architecture. Designed the custom fields engine that Blue's tasks, forms, automations and reporting run on.</dd>
-<dt><code>-b, --build</code></dt>
-<dd>Web, mobile and backend in TypeScript and Elixir. React, Vue, Nuxt, NestJS, React Native, Phoenix LiveView, PostgreSQL, Oracle.</dd>
-<dt><code>-s, --ship</code></dt>
-<dd>Take work from statement of work to production in two-week sprints, as the client's technical counterpart.</dd>
-</dl>
+### សួស្ដី ខ្ញុំឈ្មោះ Chanlito។
 
-### <samp>EXAMPLES</samp>
+ខ្ញុំជាអ្នកដឹកនាំផ្នែកបច្ចេកទេសនៅភ្នំពេញ។ ខ្ញុំបង្កើតផលិតផល SaaS និងផលិតផលសម្រាប់សហគ្រាស ហើយខ្ញុំសរសេរអំពី TypeScript កម្មវិធីដែលដំណើរការដោយគ្មានអ៊ីនធឺណិត និងការបង្កើតកម្មវិធីនៅកម្ពុជា។
 
-<samp>$ <b>chanlito --lead</b> loan-origination</samp>\
-A loan origination platform for a Cambodian financial institution, replacing a manual process from the first field visit to disbursement. An offline-first Android tablet app for field agents, an approver portal and a NestJS API on Oracle. 2026 to now.
+**ឥឡូវនេះ**
 
-<samp>$ <b>chanlito --design --build</b> blue</samp>\
-Blue, a project and process management SaaS with thousands of active users. A custom fields engine, a drag-and-drop form builder, real-time updates, and a BullMQ pipeline running 10,000+ jobs a day. 2018 to 2025.
+- ខ្ញុំកំពុងដឹកនាំការបង្កើត**ប្រព័ន្ធផ្ដល់ប្រាក់កម្ចី**សម្រាប់គ្រឹះស្ថានហិរញ្ញវត្ថុមួយនៅកម្ពុជា។
+- បង្កើតគេហទំព័រ **[chanlito.dev](https://chanlito.dev/km/)** នៅថ្ងៃឈប់សម្រាក និងចុងសប្ដាហ៍។
+- ពិភាក្សាអំពីការងារ freelance និងការប្រឹក្សា។
 
-<samp>$ <b>chanlito --ship</b> ai-workouts medicine-finder</samp>\
-AI workout generation with Gemini in Elixir and Phoenix LiveView, and an assistant that reads prescriptions and finds one pharmacy in Cambodia that can fill the whole list. 2026.
+**គម្រោង**
 
-### <samp>ENVIRONMENT</samp>
+- **[Blue](https://chanlito.dev/km/projects/#blue)** (2018 – 2025): វេទិកា​គ្រប់គ្រង​ដំណើរការ​ការងារ ដែល​ក្រុម​ការងារ​រាប់ពាន់​ប្រើប្រាស់។
+- **[ប្រព័ន្ធ​ដំណើរការ​ស្នើសុំ​កម្ចី](https://chanlito.dev/km/projects/#loan-system)** (2026 – បច្ចុប្បន្ន): ជំនួស​ដំណើរការ​កម្ចី​លើ​ក្រដាស នៅ​ស្ថាប័ន​ហិរញ្ញវត្ថុ​មួយ​នៅ​កម្ពុជា។
+- **[Caracol Sports Club](https://chanlito.dev/km/projects/#caracol)** (2026): គេហទំព័រ និង​កម្មវិធី​ហាត់ប្រាណ សម្រាប់​កន្លែង​ហាត់ប្រាណ​មួយ​នៅ​ភ្នំពេញ។
+- **[Tesjor](https://chanlito.dev/km/projects/#tesjor)** (2016 – 2017): កម្មវិធី​កុម្ម៉ង់​អាហារ ដោយ​មិន​ប្រើ​សាច់ប្រាក់ ដំបូង​គេ​នៅ​កម្ពុជា។
 
-<samp>TZ=Asia/Phnom_Penh</samp>\
-Based in Phnom Penh, Cambodia (UTC+7). Works hybrid or remote with teams across time zones.
+**តោះបង្កើតអ្វីមួយជាមួយគ្នា**
 
-<samp>LANGUAGE=km:es:en</samp>\
-Khmer, Spanish and English.
+មានផលិតផលចង់បង្កើត ក្រុមដែលត្រូវការអ្នកដឹកនាំផ្នែកបច្ចេកទេស ឬគ្រាន់តែមានសំណួរ? ផ្ញើសារមកខ្ញុំ។ [hi@chanlito.dev](mailto:hi@chanlito.dev)
 
-### <samp>HISTORY</samp>
+</details>
 
-<samp>2026.05</samp>&ensp;Technical Lead, Sean Oliver Consulting\
-<samp>2026.01</samp>&ensp;Software Engineer Consultant\
-<samp>2018.04</samp>&ensp;Founding Engineer, Blue\
-<samp>2017.01</samp>&ensp;Tech Lead, Pathmazing\
-<samp>2015.10</samp>&ensp;Software Engineer, Pathmazing\
-<samp>2010–15</samp>&ensp;B.Sc. Software Engineering, Universidad de Cienfuegos, Cuba
+<details>
+<summary><picture><source media="(prefers-color-scheme: dark)" srcset="assets/flag-es-dark.svg"><img src="assets/flag-es-light.svg" alt="" width="26" align="top"></picture> <b>Léelo en español</b></summary>
 
-### <samp>BUGS</samp>
+### Hola, soy Chanlito.
 
-Occasionally refactors code that already works.
+Soy líder técnico en Phnom Penh. Creo productos SaaS y empresariales, y escribo sobre TypeScript, apps offline-first y cómo crear software en Camboya.
 
-### <samp>AUTHOR</samp>
+**Ahora**
 
-Chanlito Hem &lt;[chanlitohem@gmail.com](mailto:chanlitohem@gmail.com)&gt;
+- Dirijo la construcción de un **sistema de originación de préstamos** para una institución financiera en Camboya.
+- Construyo **[chanlito.dev](https://chanlito.dev/es/)** en vacaciones y fines de semana, y aprendo Astro con él.
+- Abierto a hablar de trabajo freelance y consultoría.
 
-### <samp>SEE ALSO</samp>
+**Cosas que hice**
 
-[linkedin(1)](https://linkedin.com/in/chanlito)
+- **[Blue](https://chanlito.dev/es/projects/#blue)** (2018 – 2025): Una plataforma de gestión de procesos con la que miles de equipos organizan su trabajo.
+- **[Sistema de originación de préstamos](https://chanlito.dev/es/projects/#loan-system)** (2026 – hoy): Sustituye un proceso de préstamos en papel en una institución financiera de Camboya.
+- **[Caracol Sports Club](https://chanlito.dev/es/projects/#caracol)** (2026): La web y la app de entrenamiento de un gimnasio con piscina en Phnom Penh.
+- **[Tesjor](https://chanlito.dev/es/projects/#tesjor)** (2016 – 2017): La primera app de pedidos de comida sin efectivo de Camboya.
 
-<div align="center">
+**Construyamos algo**
 
-<samp>chanlito 2026.05&emsp;&emsp;Phnom Penh&emsp;&emsp;CHANLITO(1)</samp>
+¿Tienes un producto por crear, un equipo que necesita un líder técnico o solo una pregunta? Escríbeme. [hi@chanlito.dev](mailto:hi@chanlito.dev)
 
-<img src="https://komarev.com/ghpvc/?username=chanlito&style=flat-square&color=8250df&label=profile+views" alt="Profile views">
-
-</div>
+</details>
